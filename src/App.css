@@ -41,13 +41,14 @@ body {
   justify-content: center;
 }
 .navbar ul li {
-  padding: 15px;
+  padding: 10px;
+  transition: 0.5s;
 }
-.navbar ul li :hover {
-  color: rgb(199, 131, 75);
-  transition: ease-in-out 0.2s;
+.navbar ul li:hover {
+  background-color: rgb(233, 139, 212);
 }
 .link {
+  padding: 10px;
   color: black;
 }
 
@@ -58,7 +59,7 @@ body {
   object-fit: cover;
 }
 .bars_btn {
-  display: none;
+  visibility: hidden;
 }
 
 /* start of media for navbar */
@@ -74,7 +75,7 @@ body {
   .hide {
     height: 0;
     overflow: hidden;
-    transform: translateY(-150%);
+    transform: translateY(-50%);
   }
   .navbar ul li {
     width: 90vw;
@@ -85,21 +86,26 @@ body {
     border-bottom: 1px solid;
   }
   .navbar ul li:hover {
-    background-color: rgb(199, 131, 75, 0.3);
-    transition: ease-in-out 0.2s;
+    background-color: rgb(233, 139, 212);
+    transition: ease-in-out 0.5s;
     cursor: pointer;
   }
   .link {
     color: black;
   }
   .bars_btn {
-    margin-right: 30px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
+    visibility: visible;
+    font-size: 1.6rem;
+    color: var(--clr-primary-5);
+    background: transparent;
+    border-color: transparent;
+    transition: 0.5s;
     cursor: pointer;
+    color: rgb(25, 25, 26);
+    padding-right: 10px;
+  }
+  .bars_btn:hover {
+    transform: rotate(90deg);
   }
 
   .logo_bar {
@@ -216,3 +222,36 @@ body {
 }
 
 /* end of products section */
+/* start of the siglepage */
+.siglePageWrapper {
+  padding: 50px 20px 50px 20px;
+  margin: 0 auto;
+  max-width: 70vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.sliderSection {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: flex-start;
+  gap: 5px;
+}
+.sliderSection img {
+  cursor: pointer;
+  display: block;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}
+.image {
+  max-width: 500px;
+  max-height: 500px;
+}
+.image img {
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+/* end of the siglepage */

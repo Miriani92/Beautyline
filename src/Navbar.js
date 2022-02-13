@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "./images/logo.png";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaBars } from "react-icons/fa";
 import React, { useState } from "react";
 
 const Navbar = () => {
@@ -19,12 +18,11 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo_bar">
-        {" "}
         <Link>
           <img className="logo" src={logo} alt="beautyline" />
         </Link>
         <button className="bars_btn" onClick={showLinks}>
-          <FontAwesomeIcon icon={faBars} size="lg" />
+          <FaBars />
         </button>
       </div>
 
@@ -40,8 +38,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/Prodacts" className="link">
-            პროდქცია
+          <Link to="/Production" className="link">
+            პროდუქცია
           </Link>
         </li>
         <li>
