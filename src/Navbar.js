@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo_bar">
-        <Link>
+        <Link to="/">
           <img className="logo" src={logo} alt="beautyline" />
         </Link>
         <button className="bars_btn" onClick={showLinks}>

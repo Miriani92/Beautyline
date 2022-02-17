@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Discounts = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return <div className="discountwrapper"></div>;
+};
 
-export default Discounts
+export default Discounts;

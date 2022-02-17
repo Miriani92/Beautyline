@@ -1,13 +1,7 @@
-import React from 'react'
-
-
+import React from "react";
 
 const Aboutus = () => {
-    return (
-        <div>
-            hi there
-        </div>
-    )
-}
+  return <div className="aboutuswrapper"></div>;
+};
 
-export default Aboutus
+export default Aboutus;

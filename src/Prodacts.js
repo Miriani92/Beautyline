@@ -6,8 +6,10 @@ const Prodacts = ({ id, image1, name }) => {
     <React.Fragment>
       <Link to={`/Prodacts/${id}`}>
         <div className="productcard">
-          <h2>{name}</h2>
-          <img className="productimage" src={require(`${image1}`).default} />
+          <h2 className="productheader">{name}</h2>
+          <div className="imagecontainer">
+            <img className="productimage" src={require(`${image1}`).default} />
+          </div>
         </div>
       </Link>
     </React.Fragment>

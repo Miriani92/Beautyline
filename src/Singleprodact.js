@@ -39,7 +39,11 @@ const Singleprodact = () => {
           />
         </div>
       </div>
-      <div className="discriptionSection"></div>
+      <div className="discriptionSection">
+        <h2>{singleProdact.name}</h2>
+        <h1 style={{ paddingTop: "20px" }}>{singleProdact.price}₾</h1>
+        <h4 style={{ paddingTop: "20px" }}>{singleProdact.discription}</h4>
+      </div>
     </article>
   );
 };
