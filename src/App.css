@@ -184,11 +184,17 @@ body {
     box-shadow: -1px 0px 20px 2px #000000;
   }
   .productcard h2 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     word-wrap: break-word;
     width: 300px;
     text-align: center;
     font-size: 15px;
     padding: 5px;
+    color: #000000;
+    background: rgb(105, 228, 211);
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 @media screen and (min-width: 641px) {
@@ -255,7 +261,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 50px;
-  height: calc(100vh - 162px);
 }
 .sliderSection {
   padding-top: 5px;
@@ -285,27 +290,28 @@ body {
 .discriptionSection h4 {
   word-spacing: 10px;
 }
+@media screen and (max-width: 1100px) {
+  .siglePageWrapper {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .image {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+  }
+  .sliderSection {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+}
 
 /* end of the singlepage */
-
-/* start of the about section */
-/* .aboutuswrapper {
-  height: calc(100vh - 162px);
-} */
-/* end of about section */
-
-/* start of dicount */
-/* .discountwrapper {
-  height: calc(100vh - 162px);
-} */
-
-/* end of discount */
-
-/* start of contact */
-/* .contactwrapper {
-  height: calc(100vh - 162px);
-} */
-/* end of the contact */
 
 /* start of the production filter section */
 .production {
@@ -337,3 +343,19 @@ body {
 }
 
 /* end of the production filter section */
+@media screen and (max-width: 1015px) {
+  .filterbtn {
+    display: block;
+    padding: 20px;
+    border-radius: 20px;
+    border: transparent;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  .filterButtonswrapper {
+    display: grid;
+    margin: 0 auto;
+    min-width: 450px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
