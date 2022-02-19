@@ -27,6 +27,13 @@ body {
 }
 
 /* navbar start */
+.holepagewrapper {
+  position: relative;
+  min-height: 100vh;
+}
+.wrap {
+  padding-bottom: 70px;
+}
 
 .navbar {
   background-color: var(--navbarColor);
@@ -120,6 +127,9 @@ body {
 /* start footer */
 
 .page-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   height: 70px;
   background-color: var(--navbarColor);
   display: flex;
@@ -279,22 +289,22 @@ body {
 /* end of the singlepage */
 
 /* start of the about section */
-.aboutuswrapper {
+/* .aboutuswrapper {
   height: calc(100vh - 162px);
-}
+} */
 /* end of about section */
 
 /* start of dicount */
-.discountwrapper {
+/* .discountwrapper {
   height: calc(100vh - 162px);
-}
+} */
 
 /* end of discount */
 
 /* start of contact */
-.contactwrapper {
+/* .contactwrapper {
   height: calc(100vh - 162px);
-}
+} */
 /* end of the contact */
 
 /* start of the production filter section */

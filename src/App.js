@@ -7,35 +7,38 @@ import Discounts from "./Discounts";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Production from "./Production";
-import Prodacts from "./Prodacts";
 import Singleprodact from "./Singleprodact";
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/Aboutus">
-          <Aboutus />
-        </Route>
-        <Route path="/Production">
-          <Production />
-        </Route>
-        <Route path="/Prodacts/:id">
-          <Singleprodact />
-        </Route>
-        <Route path="/Discounts">
-          <Discounts />
-        </Route>
-        <Route path="/Contact">
-          <Contact />
-        </Route>
-      </Switch>
-      <Footer />
-    </Router>
+    <div className="holepagewrapper">
+      <div className="wrap">
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/Aboutus">
+              <Aboutus />
+            </Route>
+            <Route path="/Production">
+              <Production />
+            </Route>
+            <Route path="/Prodacts/:id">
+              <Singleprodact />
+            </Route>
+            <Route path="/Discounts">
+              <Discounts />
+            </Route>
+            <Route path="/Contact">
+              <Contact />
+            </Route>
+          </Switch>
+          <Footer />
+        </Router>
+      </div>
+    </div>
   );
 }
 
