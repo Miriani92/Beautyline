@@ -19,8 +19,8 @@ const Navbar = () => {
           <FaBars />
         </button>
       </div>
-      <div className={sidebar ? "sidebar" : ""}>
-        <ul>
+      <div className="sidebarwrapper">
+        <ul className={!sidebar ? `sidebar` : "sidebar show"}>
           <li>
             <Link to="/" className="link">
               მთავარი

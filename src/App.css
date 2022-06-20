@@ -29,7 +29,7 @@ body {
 /* navbar start */
 .holepagewrapper {
   position: relative;
-  min-height: 100vh;
+  /* min-height: 100vw; */
 }
 .wrap {
   padding-bottom: 70px;
@@ -43,16 +43,16 @@ body {
   justify-content: space-between;
   padding: 2rem 2rem;
 }
-.navbar ul {
+.sidebar {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s linear;
 }
-.navbar ul li {
+.sidebar li {
   padding: 10px;
-  transition: 0.5s;
 }
-.navbar ul li:hover {
+.sidebar li:hover {
   background-color: rgb(233, 139, 212);
 }
 .link {
@@ -70,40 +70,6 @@ body {
   visibility: hidden;
 }
 
-/* start of media for navbar */
-@media screen and (max-width: 1125px) {
-  .logo_bar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .btn {
-    all: unset;
-    z-index: 99;
-    position: fixed;
-    visibility: visible;
-    right: 6rem;
-    font-size: 30px;
-    background: transparent;
-    cursor: pointer;
-    color: rgb(44, 41, 41);
-    transition: all 0.2s linear;
-  }
-  .btn.rotate {
-    transform: rotate(90deg);
-    color: rgb(36, 32, 32);
-  }
-  .sidebar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-}
-
-/* start of media for navbar */
 /* navbar end */
 /* =========================== */
 /* start footer */
@@ -315,6 +281,10 @@ body {
   border: transparent;
   font-size: 17px;
   cursor: pointer;
+}
+.filterbtn:hover {
+  background-color: #2654b8;
+  color: white;
 }
 .filterditemswrapper {
   margin: 0 auto;
