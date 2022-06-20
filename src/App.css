@@ -26,13 +26,8 @@ body {
   background-color: var(--mainColor);
 }
 
-/* navbar start */
-.holepagewrapper {
-  position: relative;
-  /* min-height: 100vw; */
-}
 .wrap {
-  padding-bottom: 70px;
+  position: relative;
 }
 
 .navbar {
@@ -75,7 +70,7 @@ body {
 /* start footer */
 
 .page-footer {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   width: 100%;
   height: 150px;
@@ -84,6 +79,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 0;
   gap: 20px;
 }
 
@@ -204,12 +200,13 @@ body {
 
 /* start of the singlepage */
 .siglePageWrapper {
-  padding: 50px 20px 50px 20px;
+  padding: 100px 20px 50px 20px;
   margin: 0 auto;
   max-width: 70vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 50px;
+  height: 100vh;
 }
 .sliderSection {
   padding-top: 5px;
@@ -268,6 +265,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 50px;
 }
 .filterButtonswrapper {
   display: flex;
@@ -338,7 +336,7 @@ body {
 }
 
 .prodacts {
-  margin-bottom: 200px;
+  margin-bottom: 70px;
 }
 .copyright {
   display: flex;
@@ -363,4 +361,13 @@ body {
 .icon {
   font-size: 30px;
   color: rgb(3, 61, 221);
+}
+.aboutuswrapper {
+  height: calc(100vh - 258px);
+}
+.discountwrapper {
+  height: calc(100vh - 258px);
+}
+.contactwrapper {
+  height: calc(100vh - 258px);
 }
