@@ -360,3 +360,8 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+.svg {
+  width: 2rem;
+  height: 2rem;
+}

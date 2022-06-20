@@ -1,7 +1,8 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "./images/logo.png";
 import { FaBars } from "react-icons/fa";
-import React, { useState } from "react";
+import Svg from "./components/Svg";
 
 const Navbar = () => {
   const [classname, setclassname] = useState("hide");
@@ -25,7 +26,6 @@ const Navbar = () => {
           <FaBars />
         </button>
       </div>
-
       <ul className={classname}>
         <li>
           <Link to="/" className="link">
@@ -53,6 +53,10 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+      <div className="cartsvg">
+        {" "}
+        <Svg />
+      </div>
     </nav>
   );
 };
