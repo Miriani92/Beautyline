@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "./images/logo.png";
 import { FaBars } from "react-icons/fa";
-import Svg from "./components/Svg";
 
 const Navbar = () => {
   const [classname, setclassname] = useState("hide");
@@ -26,36 +25,34 @@ const Navbar = () => {
           <FaBars />
         </button>
       </div>
-      <ul className={classname}>
-        <li>
-          <Link to="/" className="link">
-            მთავარი
-          </Link>
-        </li>
-        <li>
-          <Link to="/Aboutus" className="link">
-            ჩვენს შესახებ
-          </Link>
-        </li>
-        <li>
-          <Link to="/Production" className="link">
-            პროდუქცია
-          </Link>
-        </li>
-        <li>
-          <Link to="/Discounts" className="link">
-            აქციები
-          </Link>
-        </li>
-        <li>
-          <Link to="/Contact" className="link">
-            კონტაქტი
-          </Link>
-        </li>
-      </ul>
-      <div className="cartsvg">
-        {" "}
-        <Svg />
+      <div className={classname}>
+        <ul>
+          <li>
+            <Link to="/" className="link">
+              მთავარი
+            </Link>
+          </li>
+          <li>
+            <Link to="/Aboutus" className="link">
+              ჩვენს შესახებ
+            </Link>
+          </li>
+          <li>
+            <Link to="/Production" className="link">
+              პროდუქცია
+            </Link>
+          </li>
+          <li>
+            <Link to="/Discounts" className="link">
+              აქციები
+            </Link>
+          </li>
+          <li>
+            <Link to="/Contact" className="link">
+              კონტაქტი
+            </Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );

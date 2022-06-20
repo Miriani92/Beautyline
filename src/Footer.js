@@ -8,15 +8,15 @@ const Footer = () => {
     <div className="page-footer">
       <a href="https://www.facebook.com/BeautyLineOne/" target="_blank">
         <span>
-          <FontAwesomeIcon icon={faFacebookF} size="lg" />
+          <FontAwesomeIcon icon={faFacebookF} className="icon" />
         </span>
       </a>
 
       <div className="copyright">
-        <span>
-          <FontAwesomeIcon icon={faCopyright} size="sm" />
-        </span>
-        <p1>ყველა უფლება დაცულია</p1>
+        <div>
+          <FontAwesomeIcon icon={faCopyright} />
+        </div>
+        <p style={{ marginLeft: "10px" }}>ყველა უფლება დაცულია</p>
       </div>
     </div>
   );
