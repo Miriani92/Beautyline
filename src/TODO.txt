@@ -1,2 +1,4 @@
-
---- footer needs some changes
+--- we need to align the sidebar icon is done 
+--- buttons needs to imprve in the porjects page 
+ 
+ 

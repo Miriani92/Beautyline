@@ -4,16 +4,7 @@ import logo from "./images/logo.png";
 import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
-  const [classname, setclassname] = useState("hide");
-
-  const showLinks = () => {
-    if (classname === "hide") {
-      setclassname("show_navlinks");
-    }
-    if (classname === "show_navlinks") {
-      setclassname("hide");
-    }
-  };
+  const [sidebar, setSidebar] = useState(false);
 
   return (
     <nav className="navbar">
@@ -21,11 +12,14 @@ const Navbar = () => {
         <Link to="/">
           <img className="logo" src={logo} alt="beautyline" />
         </Link>
-        <button className="bars_btn" onClick={showLinks}>
+        <button
+          className={sidebar ? `btn rotate` : "btn"}
+          onClick={() => setSidebar(!sidebar)}
+        >
           <FaBars />
         </button>
       </div>
-      <div className={classname}>
+      <div className={sidebar ? "sidebar" : ""}>
         <ul>
           <li>
             <Link to="/" className="link">

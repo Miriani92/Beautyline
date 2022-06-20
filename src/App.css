@@ -66,59 +66,40 @@ body {
   width: 200px;
   object-fit: cover;
 }
-.bars_btn {
+.btn {
   visibility: hidden;
 }
 
 /* start of media for navbar */
 @media screen and (max-width: 1125px) {
-  .navbar {
+  .logo_bar {
+    position: relative;
     display: flex;
-    flex-direction: column;
-  }
-  .show_navlinks {
-    transition: ease-in 0.5s;
-    flex-direction: column;
-  }
-  .hide {
-    height: 0;
-    overflow: hidden;
-    transform: translateY(-50%);
-  }
-  .navbar ul li {
-    width: 90vw;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    border-width: 100vw;
-    border-bottom: 1px solid;
-  }
-  .navbar ul li:hover {
-    background-color: rgb(233, 139, 212);
-    transition: ease-in-out 0.5s;
-    cursor: pointer;
-  }
-  .link {
-    color: black;
-  }
-  .bars_btn {
-    visibility: visible;
-    font-size: 1.6rem;
-    color: var(--clr-primary-5);
-    background: transparent;
-    border-color: transparent;
-    transition: 0.5s;
-    cursor: pointer;
-    color: rgb(25, 25, 26);
-    padding-right: 10px;
-  }
-  .bars_btn:hover {
-    transform: rotate(90deg);
+    justify-content: space-between;
   }
 
-  .logo_bar {
+  .btn {
+    all: unset;
+    z-index: 99;
+    position: fixed;
+    visibility: visible;
+    right: 6rem;
+    font-size: 30px;
+    background: transparent;
+    cursor: pointer;
+    color: rgb(44, 41, 41);
+    transition: all 0.2s linear;
+  }
+  .btn.rotate {
+    transform: rotate(90deg);
+    color: rgb(36, 32, 32);
+  }
+  .sidebar {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
